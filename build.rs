@@ -6,7 +6,6 @@ const ST_MESSAGES_SRC: &str = "src/schemas/cst_messages.capnp";
 const SERVICE_MESSAGES_SRC: &str = "src/schemas/service_messages.capnp";
 
 fn main() {
-
     // recompile capnp message into rust when the source changes
     println!("cargo:rerun-if-changed={}", MESSAGE_CAPNP_SRC);
     println!("cargo:rerun-if-changed={}", OBJECTS_CAPNP_SRC);
